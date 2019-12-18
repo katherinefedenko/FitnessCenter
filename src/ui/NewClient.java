@@ -14,13 +14,19 @@ public class NewClient extends Account implements UserMode{
 		surname = "";
 	}
 	
+	public void setSeasonTicket(SeasonTicket ticket) {
+		this.ticket = ticket;
+	}
+	
+	public SeasonTicket getSeasonTicket() {
+		return ticket;
+	}
+	
 	public SeasonTicket buySeasonTicket() {
 		return ticket;
 	}
 	
-	public void showProfile() {
-		
-	}
+	public void showProfile() {}
 	
 	@Override
 	public void createUI() {

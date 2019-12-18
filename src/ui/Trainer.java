@@ -13,7 +13,7 @@ public class Trainer extends Account {
 	//private Client client;
 	private Program program;
 	private Nutrition nutrition;
-	private Excercise excercise;
+	private Excercise exercise;
 	
 	public void setName(String name) {
 		this.name = name;
@@ -30,6 +30,31 @@ public class Trainer extends Account {
 	public String getSurame() {
 		return surname;
 	}
+	
+	public void setProgram(Program pr) {
+		program = pr;
+	}
+	
+	public Program getProgram() {
+		return program;
+	}
+	
+	public void setNutrition(Nutrition nutrition) {
+		this.nutrition = nutrition;
+	}
+	
+	public Nutrition getNutrition() {
+		return nutrition;
+	}
+	
+	public void setExercise(Excercise ex) {
+		exercise = ex;
+	}
+	
+	public Excercise getExercise() {
+		return exercise;
+	}
+	
 	/*!*/
 	public void showClients() {}
 	
@@ -39,11 +64,11 @@ public class Trainer extends Account {
 		return program;
 	}
 	
-	public Excercise addExcerciseToClient() {
-		return excercise;
+	public Excercise addExerciseToClient() {
+		return exercise;
 	}
 	
-	public void removeExcerciseFromClient() {}
+	public void removeExerciseFromClient() {}
 	
 	public Nutrition addNutritionToClient() {
 		return nutrition;

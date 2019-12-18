@@ -6,6 +6,8 @@ public class Program {
 	private Long nutritionId;
 	private Long excerciseId;
 	private int excerciseWeekNum;
+	private Nutrition nutrition;
+	private Excercise exercise;
 	
 	public void setId(Long id) {
 		this.id = id;
@@ -37,6 +39,22 @@ public class Program {
 	
 	public int getExcerciseWeekNum() {
 		return excerciseWeekNum;
+	}
+	
+	public void setNutrition(Nutrition nutrition) {
+		this.nutrition = nutrition;
+	}
+	
+	public Nutrition getNutrition() {
+		return nutrition;
+	}
+	
+	public void setExercise(Excercise ex) {
+		exercise = ex;
+	}
+	
+	public Excercise getExercise() {
+		return exercise;
 	}
 	/*!*/
 	public Program getProgram() {
